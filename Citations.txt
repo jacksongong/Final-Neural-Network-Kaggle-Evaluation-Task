@@ -1,0 +1,8 @@
+Citations:
+
+I used the pytorch instructional website to both learn and create and find the code nessessary for the assignment:
+https://pytorch.org/docs/stable/nn.html#convolution-layers
+
+I also used a neural network instructional video on youtube to learn the basic function of the neural network and what each part performs:
+https://www.youtube.com/watch?v=4p0G6tgNLis
+
