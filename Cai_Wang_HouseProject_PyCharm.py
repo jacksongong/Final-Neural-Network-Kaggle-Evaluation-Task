@@ -49,16 +49,16 @@ print(f"Using {device} device\n-------------------------------------------------
 #  load files and convert to dataframes; we use df for data frame
 # below is the command for my laptop
 
-df = pd.read_csv('/kaggle/input/test-train-data/train.csv')
-df_test = pd.read_csv('/kaggle/input/test-train-data/test.csv')
+# df = pd.read_csv('/kaggle/input/test-train-data/train.csv')
+# df_test = pd.read_csv('/kaggle/input/test-train-data/test.csv')
 
 
 
 #df_test = pd.read_csv("./test.csv")
 #df= pd.read_csv("./train.csv") #df will be our train data
 
-#df_test = pd.read_csv("F:/Cai_Wang_ResearchAssignment/House_Project_Kaggle-PyTorch/test.csv")
-#df= pd.read_csv("F:/Cai_Wang_ResearchAssignment/House_Project_Kaggle-PyTorch/train.csv") #df will be our train data
+df_test = pd.read_csv("F:/Cai_Wang_ResearchAssignment/House_Project_Kaggle-PyTorch/test.csv")
+df= pd.read_csv("F:/Cai_Wang_ResearchAssignment/House_Project_Kaggle-PyTorch/train.csv") #df will be our train data
 
 # df_test = pd.read_csv("D:/Cai_Wang_ResearchAssignment/House_Project_Kaggle-PyTorch/test.csv")
 # df = pd.read_csv("D:/Cai_Wang_ResearchAssignment/House_Project_Kaggle-PyTorch/train.csv")
@@ -219,7 +219,7 @@ def train_one_test(model, optimizer, data_loader, device):
         loss.backward()  # Backpropagation
         optimizer.step()  # Update model parameters
 
-        return loss.item()  # Return the loss for this batch
+    return loss.item()  # Return the loss for this batch
 
 def train_all(model, optimizer, device, number_tests):
     model.train()  # Make sure model is in training mode
